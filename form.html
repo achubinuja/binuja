@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content >
+	<title>LAB 1</title>
+</head>
+<style>
+	table
+	{
+		color: white;
+		background: black;
+
+	}
+	#btn
+	{
+	background: green;
+	width: 100px; height: 25px;
+    border-radius: 10px;	
+	}
+
+</style>
+<body bgcolor="white">
+	<form>
+	<table align="center" cellspacing="10">
+	<tr>
+	<td> <label> NAME </label> <td> <input type=" text"placeholder="NAME" maxlength="25"  required></td></tr>
+	<tr>
+	<td> <label> EMAIL </label> <td> <input type="email" value="test@example.com" autofocus required></td></tr>
+	<tr>
+	<td> <label> PASSWORD </label> <td> <input type= "PASSWORD" pattern="7" = required></td></tr>
+	<tr>
+	<td> <label> CATEGORY </label> 
+	 <td><select>
+		<option> STUDENTS</option>
+		<option> EMPLOYEE</option>
+		<option selected> FREELANCER</option>
+	 </td></tr>
+	     </select>
+	<tr>
+		<td> <label> EVENT DATE </label> <td> <input type="DATE" required> </td></tr>
+	<tr>
+	<td>  <label> 1 TICKET </label> <td> <input type="radio" required> </td></tr>
+	<tr>
+    <td>  <label> 2 TICKETS </label> <td> <input type="radio" required checked> </td></tr>
+    <tr>
+	<td>  <label> 3 TICKETS </label> <td> <input type="radio" required> </td></tr>
+    <tr>
+	<td> <label> ONLINE PAYMENT </label>
+	<td> <input type="checkbox" required> </td></tr>
+	<tr>
+	  	<td> <label>  NOTES </label>  <td> <textarea  rows="5" cols="35"placeholder="NOTES"></textarea></td></tr>
+
+	  	<td align="center"colspan="5">
+ 
+	    <input type="Submit" id="btn"></td></tr>
+	  </body>
+	</html>
