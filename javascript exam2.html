@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lottery Draw</title>
+    <style type="text/css">
+        .container{
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Lottery Draw</h1>
+    <br>
+    <button type="button" class="btn btn-success" id="btn" onclick="myLottery()">
+        The Lottery Winner 
+    </button>
+
+    <p id="winnerpage"></p>
+
+    <div class="modal" id="Modalone">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"> The Winner number </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p id="modalwinner"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let lottNum = ["667", "452", "303", "276"];
+
+    function myLottery() {
+    
+        let random = Math.floor(Math.random() * lottNum.length);
+
+    
+        let winner = lottNum[random];
+
+
+        console.log( "This is a winner", +winner);
+
+        document.getElementById("winnerpage").innerHTML = "The winner number is " + winner;
+        document.getElementById("winnerpage").style.color = "red";
+ 
+        document.getElementById("modalwinner").innerHTML = winner;
+    
+        $('#Modalone').modal('show');
+    }
+</script>
+
+</body>
+</html>-->
