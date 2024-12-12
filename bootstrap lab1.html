@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>lab1</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+    	.container
+    	{
+    		margin-top: 50px;
+    	}
+        
+        .box,.box1 
+        {
+            height: 100px; 
+        }
+        
+        .row 
+        {
+            display: flex;
+            flex-wrap: wrap;
+            gap:10px;
+        }
+        .col-3 
+        {
+            flex: 0 0 calc(25% - 10px); 
+        }
+        .col-6 
+        {
+           flex: 0 0 calc(50% - 10px);
+        }
+        .box2
+        {
+        	flex: 0 0 calc(25%);
+
+        }
+        .box3
+        {
+        	flex: 0 0 calc(50%);
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-12 box" style="background-color:pink;"></div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-3 box1" style="background-color:deeppink; padding: 5px;"></div>
+        <div class="col-3 box1" style="background-color:deeppink; padding: 5px;"></div>
+        <div class="col-3 box1" style="background-color:deeppink; padding: 5px;"></div>
+        <div class="col-3 box2" style="background-color:deeppink; padding: 5px;"></div>
+    </div>
+    <br>
+        <div class="row">
+        <div class="col-6 box1" style="background-color:lightskyblue;"></div>
+        <div class="col-6 box3" style="background-color:lightskyblue;"></div>
+    </div>
+    	<br>
+    	<div class="row">
+    		<div class="col-9 box1" style="background-color:greenyellow; padding:5px;"></div>
+    		<div class="col-3 box1" style="background-color:orangered; padding:5px;"></div>
+    	</div>
+    
+</body>
+</html>
+
+</body>
+</html>
