@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>lab 4</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">   
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">  
+	<style>
+		
+		div
+		{
+			background-color: white;
+			border: 4px groove black;
+			width: 99%;
+			height:70vh;
+			margin-top: 100px;
+			margin-left:5px;
+			margin-right: 10px;
+
+		}
+		h3{
+			float: left;
+			margin-top: 90px;
+			margin-left: 10px;
+
+		}
+
+		table
+		{
+			border-collapse: collapse;
+			margin: auto;
+			margin-top:70px;
+			width:90%;
+			height:50%;
+
+
+
+		}
+		input[type="text"]{
+			border: 3px solid black;
+			margin-right: 80px;
+			float: right;
+		}
+		input[type="name"]{
+			border: 0px;
+		}
+
+		th,td
+		{
+			text-align: left;
+		}
+		p{
+			margin-left: 60px;
+			margin-top: 20px;
+		}
+		.pre{
+			border-radius:5%;
+			border: none;
+			background-color:lightgrey;
+
+		}
+		.pre_1{
+			border-radius:50%;
+			border: none;
+			background-color: lightgrey;
+
+		}
+		.pre_2{
+
+			border-radius:50%;
+			border: none;
+			background-color: lightgrey;
+
+			
+		}
+		.pre_3{
+			border-radius:50%;
+			border: none;
+			background-color:dodgerblue;
+			
+		}
+		.pre_4{
+			border-radius:50%;
+			border: none;
+			background-color: lightgrey;
+			
+		}
+		.pre_5{
+			border-radius:50%;
+			border: none;
+			background-color: lightgrey;
+			
+		}
+		.pre_N{
+			border-radius:5%;
+			border: none;
+			background-color: lightgrey;
+			
+		}
+		button{
+			float: right;
+
+			
+		}
+	</style>
+</head>
+<body>
+	<div>
+		
+		<input type="name" class="style" name="" value="show entries">
+		<h2 style="text-align: center;">Customer<span><b> Details</b></span></h2>
+		<input type="text" name="search" value="search">
+	<table border="1">
+		<thead>
+			<th>#</th>
+			<th>Name</th>
+			<th>Address</th>
+			<th>City</th>
+			<th>Pincode</th>
+			<th>Country</th>
+			<th>Actions</th>
+		</thead>
+		<tr>
+			<td>1</td>
+			<td>Thomas Hardy</td>
+			<td>89 Chiarsco Rd.</td>
+			<td>Portland</td>
+			<td>912119</td>
+			<td>USA</td>
+			<td><i class="material-icons" style="color:dodgerblue;">visibility</i>   
+                <i class="material-icons" style="color:orange;">edit</i>   
+                <i class="material-icons" style="color:red">delete</i></td>
+
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Maria Anders</td>
+			<td>Obere Str.57</td>
+			<td>Berlin</td>
+			<td>12209</td>
+			<td>Germany</td>
+			<td><i class="material-icons" style="color:dodgerblue;">visibility</i>
+                <i class="material-icons" style="color:orange;">edit</i>   
+                <i class="material-icons" style="color:red;">delete</i></td>
+		</tr>
+			<tr>
+				<td>3</td>
+			<td>Fran Wilson</td>
+			<td>C/Araquil,67</td>
+			<td>Madrid</td>
+			<td>28023</td>
+			<td>Span</td>
+			<td><i class="material-icons" style="color:dodgerblue;">visibility</i>   
+                <i class="material-icons" style="color:orange;">edit</i>   
+                <i class="material-icons" style="color:red;">delete</i></td>
+
+			</tr>
+			<tr>
+				<td>4</td>
+			<td>Dominic Perrier</td>
+			<td>25,rue Lauriston</td>
+			<td>Paris</td>
+			<td>75016</td>
+			<td>France</td>
+			<td><i class="material-icons" style="color:dodgerblue;">visibility</i>   
+                <i class="material-icons" style="color:orange;">edit</i>   
+                <i class="material-icons" style="color:red;">delete</i></td>
+		</tr>
+		<tr><td>5</td>
+			<td>Martin Blank</td>
+			<td>Via Monteblanco 34</td>
+			<td>Turin</td>
+			<td>10100</td>
+			<td>Italy</td>
+			<td><i class="material-icons" style="color:dodgerblue;">visibility</i>   
+                <i class="material-icons" style="color:orange;">edit</i>   
+                <i class="material-icons" style="color:red;">delete</i></td>
+		</tr>
+	</table>
+	<p>Showing <b>5</b> out of <b>25 </b>entries</p>
+	<button type="button" class="pre">Next</button>
+	<button type="button" class="pre_1">5</button>
+	<button type="button" class="pre_2">4</button>
+	<button type="button" class="pre_3">3</button>
+	<button type="button" class="pre_4">2</button>
+	<button type="button" class="pre_5">1</button>
+	<button type="button" class="pre_N">Previous</button>
+
+</div>
+
+</body>
+</html>
